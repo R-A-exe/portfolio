@@ -4,6 +4,10 @@
     padding: 0px;    
 }
 
+body{
+    background-color: lightgray;
+}
+
 /* NAVIGATION */
 
 /* navbar color black */
@@ -54,4 +58,30 @@ p{
 
 .logo{
    margin: 0px auto;
+}
+
+/* main section animation */
+
+#aboutme{
+    position: relative;
+    animation: fadeInDown 2s;
+}
+
+#skills{
+    position: relative;
+    animation: fadeInUp 2s;
+}
+
+@keyframes fadeInDown {
+    from {opacity: 0;
+          top: -50px;}
+    to {opacity: 1;
+        top: 0px;}
+}
+
+@keyframes fadeInUp {
+    from {opacity: 0;
+          bottom: -50px;}
+    to {opacity: 1;
+        bottom: 0px;}
 }
