@@ -1,0 +1,57 @@
+/* GENERAL */
+* {
+    margin: 0px;
+    padding: 0px;    
+}
+
+/* NAVIGATION */
+
+/* navbar color black */
+.navbar{
+    background-color: black;
+}
+
+/* navbar brand formatting */
+.navbar-brand {
+    color: white;
+    font-family: 'Kufam', cursive;
+    font-weight: 600;
+    font-size: 35px;
+    padding: 10px 0px;
+}
+
+/* menu font formatting */
+.nav-item{
+    font-family: 'Kufam', cursive;
+    font-weight: 400;
+}
+
+
+/* MAIN */
+
+/* main section margins */
+main{
+    padding-left: 7px;
+    padding-right: 7px
+}
+
+.row{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* main card header formatting */
+h1{
+    font-family: 'Kufam', cursive;
+    font-weight: 600;
+}
+
+/* main card text formatting */
+p{
+    font-family: 'Kufam', cursive;
+    font-weight: 400;
+}
+
+.logo{
+   margin: 0px auto;
+}
