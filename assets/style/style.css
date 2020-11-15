@@ -1,12 +1,26 @@
 /* GENERAL */
-* {
+
+html {
+    position: relative;
+    min-height: 100%;
     margin: 0px;
     padding: 0px;    
 }
 
 body{
     background-color: lightgray;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
+
+p{
+    color: white;
+    font-family: 'Kufam', cursive;
+    font-weight: 400;
+}
+
+/* ====================================================================== */
 
 /* NAVIGATION */
 
@@ -30,21 +44,22 @@ body{
     font-weight: 400;
 }
 
+/* ====================================================================== */
 
 /* MAIN */
 
-/* main section margins */
-section {
+/* General formatting */
+main {
+    margin-bottom: 100px; /*to compensate for sticky footer*/
+}
+section, .row {
     margin: 0px;
     padding: 0px;
 }
 
-.row{
-    margin: 0px;
-    padding: 0px;
-}
+/* -------------------------------------------------------- */
 
-/* main card header formatting */
+/* About Me */
 h1{
     color: white;
     font-family: 'Kufam', cursive;
@@ -52,22 +67,11 @@ h1{
     font-size: x-large;
 }
 
-/* main card text formatting */
-p{
-    color: white;
-    font-family: 'Kufam', cursive;
-    font-weight: 400;
+section {
+    position: relative;
+    animation: fadeInUp 2s;
 }
 
-.logo{
-   margin: 10px auto;
-}
-
-#horiseon p {
-    color: black;
-}
-
-/* about me formatting */
 #aboutme{
     text-align: center;
     border-bottom-left-radius: 100px;
@@ -82,13 +86,16 @@ p{
     background-color: white;
 }
 
-/* skills formatting */
-section {
-    position: relative;
-    animation: fadeInUp 2s;
+/* -------------------------------------------------------- */
+
+/* Skills */
+.logo{
+   margin: 10px auto;
 }
 
-/* main section animation */
+/* -------------------------------------------------------- */
+
+/* Animation */
 @keyframes fadeInDown {
     from {opacity: 0;
           top: -100px;}
@@ -101,4 +108,24 @@ section {
           top: 100px;}
     to {opacity: 1;
         top: 0px;}
+}
+
+/* ====================================================================== */
+
+/* FOOTER */
+
+footer { /* sticky footer css from bootstrap https://getbootstrap.com/docs/4.0/examples/sticky-footer/ */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+h5 {
+    color: white;
+    font-family: 'Kufam', cursive;
+    font-weight: 400;
+    font-size: 20px;
 }
