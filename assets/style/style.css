@@ -34,9 +34,9 @@ body{
 /* MAIN */
 
 /* main section margins */
-main{
-    padding-left: 7px;
-    padding-right: 7px
+section {
+    margin: 0px;
+    padding: 0px;
 }
 
 .row{
@@ -46,42 +46,56 @@ main{
 
 /* main card header formatting */
 h1{
+    color: white;
     font-family: 'Kufam', cursive;
     font-weight: 600;
+    font-size: x-large;
 }
 
 /* main card text formatting */
 p{
+    color: white;
     font-family: 'Kufam', cursive;
     font-weight: 400;
 }
 
 .logo{
-   margin: 0px auto;
+   margin: 10px auto;
 }
 
-/* main section animation */
-
+/* about me formatting */
 #aboutme{
+    text-align: center;
+    border-radius: 100px;
+    background-color: black;
+    padding: 140px 60px 60px 60px;
     position: relative;
     animation: fadeInDown 2s;
+    top: -140px;
 }
 
+#aboutme hr{
+    background-color: white;
+}
+
+/* skills formatting */
 #skills{
     position: relative;
     animation: fadeInUp 2s;
+    top: -100px;
 }
 
+/* main section animation */
 @keyframes fadeInDown {
     from {opacity: 0;
-          top: -50px;}
+          top: -200px;}
     to {opacity: 1;
-        top: 0px;}
+        top: -140px;}
 }
 
 @keyframes fadeInUp {
     from {opacity: 0;
-          bottom: -50px;}
+          top: 0px;}
     to {opacity: 1;
-        bottom: 0px;}
+        top: -100px;}
 }
