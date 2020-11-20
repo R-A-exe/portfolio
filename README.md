@@ -2,7 +2,7 @@
 
 Link: https://r-a-exe.github.io/portfolio/
 
-## High-Lvel Description:
+## High-Level Description:
 
 This is my professional portfolio website, built using Bootstrap for styling.
 It consists of three pages (Home/About me, Portfolio, Contact).
