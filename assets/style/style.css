@@ -80,8 +80,7 @@ header{
 
 /* General formatting */
 main {
-    margin-bottom: 100px; /*to compensate for sticky footer*/
-    padding: 0px 20px;
+    margin-bottom: 50px; /*to compensate for sticky footer*/
 }
 section{
     margin: 0px;
@@ -123,10 +122,6 @@ section {
 /* -------------------------------------------------------- */
 
 /* Skills */
-.logo{
-  
-}
-
 .icon{
     width: 60px;
     padding: 5px;
@@ -161,6 +156,44 @@ main p{
     padding: 10px;
 }
 
+/* -------------------------------------------------------- */
+
+/* Portfolio */
+
+.portfolioItem:nth-child(even) {
+    background-image: linear-gradient(to right, rgba(22, 67, 119, 0.5), rgba(8, 85, 156, 0.3));
+  }
+
+.portfolioItem div{
+    margin: auto
+}
+
+.portfolioItem img{
+    width: 100%;
+    padding: 20px;
+}
+.portfolioItem h2{
+display: inline;
+}
+
+.portfolioItem h3{
+    padding: 10px;
+    font-size: 10pt;
+    color: gray;
+    display: inline;
+}
+.portfolioItem h3 a{
+    font-size: 10pt;
+    color: gray;
+}
+
+/* -------------------------------------------------------- */
+
+/* Contact */
+
+.contact{
+    text-align: center;
+}
 
 /* -------------------------------------------------------- */
 
@@ -210,6 +243,20 @@ h5 {
     margin-right: 0px;
     text-align: center;
     }
+    .portfolioItem div{
+        text-align: center;
+    }
+    .portfolioItem h2{
+        display: block;
+        }
+    
+    .portfolioItem h3{
+        display: block;
+    }
+
+    .portfolioItem ul {
+        list-style-position: inside;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -224,4 +271,8 @@ h5 {
    #me img{
     width: 250px;
    }
+
+   .portfolioItem ul {
+    text-align: left;
+    }
   }
