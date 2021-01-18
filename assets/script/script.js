@@ -1,15 +1,15 @@
 var lastScT = 440;
 
 $(document).scroll(() => {
+
     var dist = $(window).scrollTop();
     var opac = $("header").css("opacity");
     if (dist > 440) {
-        if (lastScT < dist) {
+        if (lastScT < dist && ($(window).scrollTop() + $(window).height() <= $(document).height())) {
             if (opac > 0) {
                 $("header").css("opacity",  (50-dist + lastScT)/50);
             } else {
                 lastScT = dist;
-                console.log("CHANGE ")
                 $("header").hide();
             }
         }
@@ -21,7 +21,6 @@ $(document).scroll(() => {
                 $("header").css("opacity",  (lastScT-dist)/50);
             } else {
                 lastScT = dist;
-                console.log("CHANGE ")
             }   
         }
     } else {
