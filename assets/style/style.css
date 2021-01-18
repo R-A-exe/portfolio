@@ -8,39 +8,69 @@ html {
 }
 
 body{
-    background-color: lightgray;
     min-height: 100%;
     margin: 0px;
     padding: 0px;
 }
 
+h1{
+    color: white;
+    font-family: 'Barlow';
+    font-size: x-large;
+}
+
+h2{
+    color: black;
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: x-large;
+}
+
 p{
     color: white;
-    font-family: 'Kufam', cursive;
-    font-weight: 400;
+    font-family: 'Barlow';
+    font-size: 12pt;
+}
+
+.row {
+    margin: none;
+    padding: none;
 }
 
 /* ====================================================================== */
 
 /* NAVIGATION */
 
-/* navbar color black */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#spacer{
+    height: 95px;
+}
+
+/* navbar color */
 .navbar{
-    background-color: black;
+    background-image: linear-gradient(to right, rgb(1, 21, 112), rgb(1, 98, 143));
 }
 
 /* navbar brand formatting */
 .navbar-brand {
     color: white;
-    font-family: 'Kufam', cursive;
+    font-family: 'Bebas Neue';
     font-weight: 600;
-    font-size: 35px;
+    font-size: 40px;
     padding: 10px 0px;
 }
 
 /* menu font formatting */
 .nav-item{
-    font-family: 'Kufam', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -51,21 +81,16 @@ p{
 /* General formatting */
 main {
     margin-bottom: 100px; /*to compensate for sticky footer*/
+    padding: 0px 20px;
 }
-section, .row {
+section{
     margin: 0px;
-    padding: 0px;
+    padding: 30px;
 }
 
 /* -------------------------------------------------------- */
 
 /* About Me */
-h1{
-    color: white;
-    font-family: 'Kufam', cursive;
-    font-weight: 600;
-    font-size: x-large;
-}
 
 section {
     position: relative;
@@ -73,25 +98,69 @@ section {
 }
 
 #aboutme{
-    text-align: center;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    background-color: black;
-    padding: 0px 60px 20px 60px;
     position: relative;
     animation: fadeInDown 2s;
+    background-image: linear-gradient(to right, rgb(1, 21, 112), rgb(1, 98, 143));
 }
 
 #aboutme hr{
     background-color: white;
 }
 
+#aboutText{
+   margin: auto 0px;
+}
+
+#me{
+    text-align: right;
+}
+
+#me img{
+    width: 100%;
+    border-radius: 50%;
+}
+
 /* -------------------------------------------------------- */
 
 /* Skills */
 .logo{
-   margin: 10px auto;
+  
 }
+
+.icon{
+    width: 60px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+main p{
+    color: black;
+}
+
+.textCont{
+    padding: 30px;
+}
+
+#devLogos{
+    margin: auto;
+    text-align: center;
+}
+
+#devLogos img{
+    display: inline;
+    width: 100px;
+}
+
+#pmLogos{
+    margin: auto;
+    text-align: center;
+}
+
+#pmLogos img{
+    max-width: 200px;
+    padding: 10px;
+}
+
 
 /* -------------------------------------------------------- */
 
@@ -114,19 +183,18 @@ section {
 
 /* FOOTER */
 
-footer { /* sticky footer css from bootstrap https://getbootstrap.com/docs/4.0/examples/sticky-footer/ */
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 20px;
-    background-color: black;
+    background-image: linear-gradient(to right, rgb(1, 21, 112), rgb(1, 98, 143));
     text-align: center;
+    padding: 10px;
 }
 
 h5 {
     color: white;
-    font-family: 'Kufam', cursive;
-    font-weight: 400;
+    font-family: 'Barlow';
     font-size: 20px;
 }
 
@@ -136,3 +204,24 @@ h5 {
     height: 30px;
     margin: 5px;;
 }
+
+@media only screen and (max-width: 992px) {
+   #me{
+    margin-right: 0px;
+    text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+   #aboutme{
+    text-align: center;
+    padding: 20px;
+   }
+   #me{
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   #me img{
+    width: 250px;
+   }
+  }
