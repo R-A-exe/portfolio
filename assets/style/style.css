@@ -187,6 +187,11 @@ display: inline;
     color: gray;
 }
 
+.portfolioItem li{
+    font-family: 'Barlow';
+    font-size: 12pt;
+}
+
 /* -------------------------------------------------------- */
 
 /* Contact */
